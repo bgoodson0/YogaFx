@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prescription_Page">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/darkpink"
+        android:bottomLeftRadius="25dp"
+        android:bottomRightRadius="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/yogafx"
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="201dp"
+            android:fontFamily="@font/allerta"
+            android:text="yogaFX"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@color/darkpink"
+        android:bottomLeftRadius="25dp"
+        android:bottomRightRadius="25dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BottomPanel"
+        android:layout_below="@+id/topPanel"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        tools:ignore="InvalidId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/headache"
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="75dp"
+                android:alpha=".75"
+                android:background="@drawable/headache"
+                android:text="Headache"
+                android:textSize="20dp"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/white"
+                android:gravity="bottom|center"/>
+            <Button
+                android:id="@+id/restlesslegs"
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="75dp"
+                android:alpha=".75"
+                android:text="Restless Legs"
+                android:textSize="20dp"
+                android:background="@drawable/restless_legs"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/white"
+                android:gravity="bottom|center"/>
+            <Button
+                android:id="@+id/insomnia"
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="75dp"
+                android:alpha=".75"
+                android:text="Insomnia"
+                android:textSize="20dp"
+                android:background="@drawable/insomnia"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/white"
+                android:gravity="bottom|center"/>
+            <Button
+                android:id="@+id/lowbackpain"
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="75dp"
+                android:alpha=".75"
+                android:text="Lower Back Pain"
+                android:textSize="20dp"
+                android:background="@drawable/lowbackpain"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/white"
+                android:gravity="bottom|center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
